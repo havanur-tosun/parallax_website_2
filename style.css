@@ -1,0 +1,124 @@
+/* * {
+    border: 1px solid black;
+} */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+    height: 100%;
+}
+.background--image1{
+    background-image: url(./img/bg.jpg);
+    min-height: 100%;
+}
+.background--image2{
+    background-image: url(./img/bg2.jpg);
+    min-height: 80%;
+}
+.background--image3{
+    background-image: url(./img/bg3.jpg);
+    min-height: 80%;
+}
+.background--image4{
+    background-image: url(./img/bg4.jpg);
+    min-height: 80%;
+}
+.background--image1,
+.background--image2,
+.background--image3,
+.background--image4{
+    position: relative;
+    opacity: 0.7;
+    /* to center and to scale the image  */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.heading-container{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+.heading-container__heading{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    /* border-radius: 2rem 0 2rem 0; */
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: 0.5rem inset purple;
+    outline-offset: 1rem;
+}
+.heading-container__logo{
+    width: 30%;
+    opacity: 1;
+}
+.heading-container__text{
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    outline: 0.5rem inset purple;
+    outline-offset: 0.2rem;
+}
+.section{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.section--light{
+    background-color: rgb(241,241,241);
+}
+.section--dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+
+@media (max-width:760px){
+    .heading-container{
+        font-size: 1.5rem;
+    }
+    .heading-container__heading{
+        padding: 1rem;
+        /* border-radius: 2rem 0 2rem 0; */
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        outline-offset: 0.3rem;
+        line-height: 2.5rem;
+    }
+    .heading-container__logo{
+        width: 40%;
+    }
+    .heading-container__text{
+        padding: 0.4rem;
+        border-top-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        outline: 0.3rem inset purple;
+        outline-offset: 0.2rem;
+        line-height: 2.4rem;
+    }
+}
+
+
+@media(max-width:568px) {
+    .section{
+        padding: 1rem 2rem;
+    }
+    .heading-container__logo{
+        width: 50%;
+    }
+    .heading-container__heading{
+        letter-spacing: 0.1rem;
+    }
+}
